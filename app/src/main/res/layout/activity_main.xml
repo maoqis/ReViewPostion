@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bobo.reviewpostion.MainActivity">
+
+    <Button
+        android:text="选择图片"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/button" />
+
+    <TextView
+        android:text="确保有悬浮窗口和读取sd权限，选择图片后，双击屏幕中心缩小图片\n 按home键后进入自己应用。双击屏幕中心放大图片，可以上下滑动\n进入应用按返回键退出悬浮窗口"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:text="改变图片透明图"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:id="@+id/tv_head"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_head"
+        android:layout_marginTop="42dp"
+        android:id="@+id/seekBar3"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="确定选择的透明度"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar3"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="31dp"
+        android:id="@+id/button2" />
+</RelativeLayout>
